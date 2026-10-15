@@ -1,0 +1,74 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TempSmart - Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="converter">
+        <div class="icon">🌡️</div>
+
+        <h1>TempSmart</h1>
+
+        <p class="subtitle">
+            Convert temperatures quickly and easily.
+        </p>
+
+        <form id="converterForm" novalidate>
+            <label for="temperature">Enter Temperature</label>
+
+            <input
+                type="number"
+                id="temperature"
+                step="any"
+                placeholder="Enter a temperature"
+                required
+            >
+
+            <label for="unit">Select Input Unit</label>
+
+            <select id="unit">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+            </select>
+
+            <button type="submit">Convert Temperature</button>
+        </form>
+
+        <p id="message" role="alert" aria-live="polite"></p>
+
+        <section class="results" aria-live="polite">
+            <h2>Conversion Results</h2>
+
+            <div class="result-card">
+                <span>Celsius</span>
+                <strong id="celsius">-- °C</strong>
+            </div>
+
+            <div class="result-card">
+                <span>Fahrenheit</span>
+                <strong id="fahrenheit">-- °F</strong>
+            </div>
+
+            <div class="result-card">
+                <span>Kelvin</span>
+                <strong id="kelvin">-- K</strong>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 TempSmart</p>
+        </footer>
+    </main>
+
+</body>
+</html>
+```
